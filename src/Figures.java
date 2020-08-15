@@ -32,16 +32,17 @@ public class Figures {
 	}
 // Method for printing diamond
 	static void printDiamond(int size) {
+		int midpt = size/2;
+		for (int row = 1; row <= midpt; row++) {
+			for (int columns = 1; columns <= midpt - row; columns++) {
+				
+				System.out.println(" ");}
+			System.out.print("X");
 		
-		for (int row = 1; row <= 0.5 * (size + 1); row++) {
-			for (int columns = 1; columns <= (size + 1); columns++) {
-				size = 2 * (columns + row - 1);
-		for (size = 2 * (columns + row - 1); size < size; row++ ) {
-			System.out.println("X");
-		}}}
+		}}
 	
 
-	}
+	
 
 // Method for printing "X"
 	static void printX(int size) {
